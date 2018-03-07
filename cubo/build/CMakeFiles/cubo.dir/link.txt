@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/cubo.dir/cubo.cpp.o  -o cubo -rdynamic -lGLU -lGL -lglut -lXmu -lXi 
