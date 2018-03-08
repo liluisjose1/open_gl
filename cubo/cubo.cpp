@@ -97,23 +97,24 @@ void specialKeys( int key, int x, int y )
  
     //  Flecha derecha: aumentar rotación 7 grados
     if (key == GLUT_KEY_RIGHT)
-        rotate_y += 7;
+        rotate_y += 50;
  
     //  Flecha izquierda: rotación en eje Y negativo 7 grados
     else if (key == GLUT_KEY_LEFT)
-        rotate_y -= 7;
+        rotate_y -= 50;
     //  Flecha arriba: rotación en eje X positivo 7 grados
     else if (key == GLUT_KEY_UP)
-        rotate_x += 7;
+        rotate_x += 50;
     //  Flecha abajo: rotación en eje X negativo 7 grados
     else if (key == GLUT_KEY_DOWN)
-        rotate_x -= 7;
+        rotate_x -= 50;
     //  Tecla especial F2 : rotación en eje Z positivo 7 grados
     else if (key == GLUT_KEY_F2)
-        rotate_z += 7;
+        rotate_z += 50;
     //  Tecla especial F2 : rotación en eje Z negativo 7 grados
     else if (key == GLUT_KEY_F2)
-        rotate_z -= 7;
+        rotate_z -= 50;
+    
  
     //  Solicitar actualización de visualización
     glutPostRedisplay();
@@ -152,12 +153,12 @@ void keyboard(unsigned char key, int x, int y)
         break;
     case 'q':
         exit(0);			// exit
-    }
+    case 27:
+        exit(0);			// exit
+
     glutPostRedisplay();
+	}
 }
- 
- 
- 
 int main(int argc, char* argv[])
 {
  

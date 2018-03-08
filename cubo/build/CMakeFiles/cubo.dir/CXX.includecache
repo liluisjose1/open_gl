@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/luis/Documentos/AG-18/cubo.cpp
+/home/luis/open_gl/cubo/cubo.cpp
 stdio.h
 -
 GL/gl.h

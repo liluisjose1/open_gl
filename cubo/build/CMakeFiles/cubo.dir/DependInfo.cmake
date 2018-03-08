@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/luis/Documentos/AG-18/cubo.cpp" "/home/luis/Documentos/AG-18/build/CMakeFiles/cubo.dir/cubo.cpp.o"
+  "/home/luis/open_gl/cubo/cubo.cpp" "/home/luis/open_gl/cubo/build/CMakeFiles/cubo.dir/cubo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

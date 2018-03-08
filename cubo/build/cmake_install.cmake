@@ -1,4 +1,4 @@
-# Install script for directory: /home/luis/Documentos/AG-18
+# Install script for directory: /home/luis/open_gl/cubo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/luis/Documentos/AG-18/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/luis/open_gl/cubo/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
