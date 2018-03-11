@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/open_gl/Actividad#2/Vista_planta/gluLookAt.cpp
+stdio.h
+-
+GL/gl.h
+-
+GL/glut.h
+-
+

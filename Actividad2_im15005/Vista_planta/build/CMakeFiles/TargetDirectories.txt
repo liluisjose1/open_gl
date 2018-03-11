@@ -1,0 +1,3 @@
+/home/luis/open_gl/Actividad#2/Vista_planta/build/CMakeFiles/rebuild_cache.dir
+/home/luis/open_gl/Actividad#2/Vista_planta/build/CMakeFiles/edit_cache.dir
+/home/luis/open_gl/Actividad#2/Vista_planta/build/CMakeFiles/tarea.dir
