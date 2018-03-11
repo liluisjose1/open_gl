@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/luis/open_gl/Actividad#2/gluLookAt"
+CMAKE_SOURCE_DIR = /home/luis/open_gl/Actividad2_im15005/Vista_tresLados
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/luis/open_gl/Actividad#2/gluLookAt/build"
+CMAKE_BINARY_DIR = /home/luis/open_gl/Actividad2_im15005/Vista_tresLados/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/luis/open_gl/Actividad#2/gluLookAt/build/CMakeFiles" "/home/luis/open_gl/Actividad#2/gluLookAt/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/open_gl/Actividad2_im15005/Vista_tresLados/build/CMakeFiles /home/luis/open_gl/Actividad2_im15005/Vista_tresLados/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/luis/open_gl/Actividad#2/gluLookAt/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/open_gl/Actividad2_im15005/Vista_tresLados/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

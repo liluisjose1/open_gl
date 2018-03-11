@@ -1,3 +1,3 @@
-/home/luis/open_gl/Actividad#2/gluLookAt/build/CMakeFiles/rebuild_cache.dir
-/home/luis/open_gl/Actividad#2/gluLookAt/build/CMakeFiles/edit_cache.dir
-/home/luis/open_gl/Actividad#2/gluLookAt/build/CMakeFiles/tarea.dir
+/home/luis/open_gl/Actividad2_im15005/Vista_tresLados/build/CMakeFiles/rebuild_cache.dir
+/home/luis/open_gl/Actividad2_im15005/Vista_tresLados/build/CMakeFiles/edit_cache.dir
+/home/luis/open_gl/Actividad2_im15005/Vista_tresLados/build/CMakeFiles/tarea.dir

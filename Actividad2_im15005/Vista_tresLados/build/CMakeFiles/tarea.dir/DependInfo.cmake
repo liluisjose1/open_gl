@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/luis/open_gl/Actividad#2/gluLookAt/gluLookAt.cpp" "/home/luis/open_gl/Actividad#2/gluLookAt/build/CMakeFiles/tarea.dir/gluLookAt.cpp.o"
+  "/home/luis/open_gl/Actividad2_im15005/Vista_tresLados/gluLookAt.cpp" "/home/luis/open_gl/Actividad2_im15005/Vista_tresLados/build/CMakeFiles/tarea.dir/gluLookAt.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

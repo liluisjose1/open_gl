@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/luis/open_gl/Actividad#2/gluLookAt/gluLookAt.cpp
+/home/luis/open_gl/Actividad2_im15005/Vista_tresLados/gluLookAt.cpp
 stdio.h
 -
 GL/gl.h

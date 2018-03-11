@@ -1,4 +1,4 @@
-# Install script for directory: /home/luis/open_gl/Actividad#2/gluLookAt
+# Install script for directory: /home/luis/open_gl/Actividad2_im15005/Vista_tresLados
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/luis/open_gl/Actividad#2/gluLookAt/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/luis/open_gl/Actividad2_im15005/Vista_tresLados/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

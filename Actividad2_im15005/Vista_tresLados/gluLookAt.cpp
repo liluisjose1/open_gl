@@ -172,8 +172,10 @@ int main(int argc, char* argv[])
  
     // Solicitar ventana con color real y doble buffer con Z-buffer
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
-    glutInitWindowSize (800, 600);
-    glutInitWindowPosition (0, 0);
+    glutInitWindowSize (500, 500);
+     glViewport (0,0,500, 500);
+    glutInitWindowPosition ((glutGet(GLUT_SCREEN_WIDTH)-500)/2,(glutGet(GLUT_SCREEN_HEIGHT)-500)/2);
+    
     // Crear ventana
     glutCreateWindow("Cubo controlado por teclas");
  
