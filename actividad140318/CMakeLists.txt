@@ -24,7 +24,7 @@ if(NOT OPENGL_FOUND)
 endif(NOT OPENGL_FOUND)
 
 # Include Files
-add_executable(actividad main-linea.cpp)
+add_executable(actividad actividad.cpp)
 
 # Linking & stuff
 # create the program "points"

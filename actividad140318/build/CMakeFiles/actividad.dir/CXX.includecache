@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/luis/open_gl/actividad140318/main-linea.cpp
+/home/luis/open_gl/actividad140318/actividad.cpp
 GL/gl.h
 -
 GL/glut.h

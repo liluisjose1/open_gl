@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/luis/open_gl/actividad140318/main-linea.cpp" "/home/luis/open_gl/actividad140318/build/CMakeFiles/actividad.dir/main-linea.cpp.o"
+  "/home/luis/open_gl/actividad140318/actividad.cpp" "/home/luis/open_gl/actividad140318/build/CMakeFiles/actividad.dir/actividad.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

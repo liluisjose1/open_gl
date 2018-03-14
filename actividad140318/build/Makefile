@@ -123,32 +123,32 @@ actividad/fast:
 	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/build
 .PHONY : actividad/fast
 
-main-linea.o: main-linea.cpp.o
+actividad.o: actividad.cpp.o
 
-.PHONY : main-linea.o
+.PHONY : actividad.o
 
 # target to build an object file
-main-linea.cpp.o:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/main-linea.cpp.o
-.PHONY : main-linea.cpp.o
+actividad.cpp.o:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/actividad.cpp.o
+.PHONY : actividad.cpp.o
 
-main-linea.i: main-linea.cpp.i
+actividad.i: actividad.cpp.i
 
-.PHONY : main-linea.i
+.PHONY : actividad.i
 
 # target to preprocess a source file
-main-linea.cpp.i:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/main-linea.cpp.i
-.PHONY : main-linea.cpp.i
+actividad.cpp.i:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/actividad.cpp.i
+.PHONY : actividad.cpp.i
 
-main-linea.s: main-linea.cpp.s
+actividad.s: actividad.cpp.s
 
-.PHONY : main-linea.s
+.PHONY : actividad.s
 
 # target to generate assembly for a file
-main-linea.cpp.s:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/main-linea.cpp.s
-.PHONY : main-linea.cpp.s
+actividad.cpp.s:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/actividad.cpp.s
+.PHONY : actividad.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... actividad"
-	@echo "... main-linea.o"
-	@echo "... main-linea.i"
-	@echo "... main-linea.s"
+	@echo "... actividad.o"
+	@echo "... actividad.i"
+	@echo "... actividad.s"
 .PHONY : help
 
 

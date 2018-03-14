@@ -57,38 +57,38 @@ include CMakeFiles/actividad.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/actividad.dir/flags.make
 
-CMakeFiles/actividad.dir/main-linea.cpp.o: CMakeFiles/actividad.dir/flags.make
-CMakeFiles/actividad.dir/main-linea.cpp.o: ../main-linea.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/open_gl/actividad140318/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/actividad.dir/main-linea.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/actividad.dir/main-linea.cpp.o -c /home/luis/open_gl/actividad140318/main-linea.cpp
+CMakeFiles/actividad.dir/actividad.cpp.o: CMakeFiles/actividad.dir/flags.make
+CMakeFiles/actividad.dir/actividad.cpp.o: ../actividad.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/open_gl/actividad140318/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/actividad.dir/actividad.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/actividad.dir/actividad.cpp.o -c /home/luis/open_gl/actividad140318/actividad.cpp
 
-CMakeFiles/actividad.dir/main-linea.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/actividad.dir/main-linea.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/open_gl/actividad140318/main-linea.cpp > CMakeFiles/actividad.dir/main-linea.cpp.i
+CMakeFiles/actividad.dir/actividad.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/actividad.dir/actividad.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/open_gl/actividad140318/actividad.cpp > CMakeFiles/actividad.dir/actividad.cpp.i
 
-CMakeFiles/actividad.dir/main-linea.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/actividad.dir/main-linea.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/open_gl/actividad140318/main-linea.cpp -o CMakeFiles/actividad.dir/main-linea.cpp.s
+CMakeFiles/actividad.dir/actividad.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/actividad.dir/actividad.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/open_gl/actividad140318/actividad.cpp -o CMakeFiles/actividad.dir/actividad.cpp.s
 
-CMakeFiles/actividad.dir/main-linea.cpp.o.requires:
+CMakeFiles/actividad.dir/actividad.cpp.o.requires:
 
-.PHONY : CMakeFiles/actividad.dir/main-linea.cpp.o.requires
+.PHONY : CMakeFiles/actividad.dir/actividad.cpp.o.requires
 
-CMakeFiles/actividad.dir/main-linea.cpp.o.provides: CMakeFiles/actividad.dir/main-linea.cpp.o.requires
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/main-linea.cpp.o.provides.build
-.PHONY : CMakeFiles/actividad.dir/main-linea.cpp.o.provides
+CMakeFiles/actividad.dir/actividad.cpp.o.provides: CMakeFiles/actividad.dir/actividad.cpp.o.requires
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/actividad.cpp.o.provides.build
+.PHONY : CMakeFiles/actividad.dir/actividad.cpp.o.provides
 
-CMakeFiles/actividad.dir/main-linea.cpp.o.provides.build: CMakeFiles/actividad.dir/main-linea.cpp.o
+CMakeFiles/actividad.dir/actividad.cpp.o.provides.build: CMakeFiles/actividad.dir/actividad.cpp.o
 
 
 # Object files for target actividad
 actividad_OBJECTS = \
-"CMakeFiles/actividad.dir/main-linea.cpp.o"
+"CMakeFiles/actividad.dir/actividad.cpp.o"
 
 # External object files for target actividad
 actividad_EXTERNAL_OBJECTS =
 
-actividad: CMakeFiles/actividad.dir/main-linea.cpp.o
+actividad: CMakeFiles/actividad.dir/actividad.cpp.o
 actividad: CMakeFiles/actividad.dir/build.make
 actividad: /usr/lib/x86_64-linux-gnu/libGLU.so
 actividad: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -104,7 +104,7 @@ CMakeFiles/actividad.dir/build: actividad
 
 .PHONY : CMakeFiles/actividad.dir/build
 
-CMakeFiles/actividad.dir/requires: CMakeFiles/actividad.dir/main-linea.cpp.o.requires
+CMakeFiles/actividad.dir/requires: CMakeFiles/actividad.dir/actividad.cpp.o.requires
 
 .PHONY : CMakeFiles/actividad.dir/requires
 
