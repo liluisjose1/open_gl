@@ -11,6 +11,7 @@ GLfloat X = 0.0f;
 GLfloat Y = 0.0f;
 GLfloat Z = 0.0f;
 GLfloat scale = 1.0f;
+float aspect = 1.0f; 
  
  
 void display()
@@ -21,11 +22,11 @@ void display()
     // Resetear transformaciones
     glLoadIdentity();
     /* transformación vista en planta lados */
-
-		gluLookAt( 0.0, 1.0, 0.0, // punt de vista en este caso es la vista en planta 
+	 gluPerspective(20.0f, aspect, 1.0f, 10.0f); 
+	/*	gluLookAt( 0.0, 1.0, 0.0, // punt de vista en este caso es la vista en planta 
 					0.0, 0.0, 0.0, // centro del objeto es el origen
-					1.0, 1.0, 0.0); // Especifica la dirección del vector ascendente.
-    // Rotar en el eje X,Y y Z
+					0, -1.0, 0.0); // Especifica la dirección del vector ascendente.
+    */// Rotar en el eje X,Y y Z
     glRotatef( rotate_x, 1.0, 0.0, 0.0 );
     glRotatef( rotate_y, 0.0, 1.0, 0.0 );
     glRotatef( rotate_z, 0.0, 0.0, 1.0 );
@@ -164,6 +165,10 @@ void keyboard(unsigned char key, int x, int y)
     glutPostRedisplay();
 	}
 }
+void onSize(int sx, int sy) {
+ glViewport(0, 0, sx, sy); 
+ aspect = (float) sx / (float) sy;
+}
 int main(int argc, char* argv[])
 {
  
@@ -173,7 +178,7 @@ int main(int argc, char* argv[])
     // Solicitar ventana con color real y doble buffer con Z-buffer
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize (500, 500);
-     glViewport (0,0,500, 500);
+    // glViewport (0,0,500, 500);
     glutInitWindowPosition ((glutGet(GLUT_SCREEN_WIDTH)-500)/2,(glutGet(GLUT_SCREEN_HEIGHT)-500)/2);
     // Crear ventana
     glutCreateWindow("Cubo controlado por teclas");
@@ -183,6 +188,7 @@ int main(int argc, char* argv[])
  
     // Funciones de retrollamada
     glutDisplayFunc(display);
+    glutReshapeFunc(onSize); 
     glutKeyboardFunc(keyboard);
     glutSpecialFunc(specialKeys);
  
