@@ -7,7 +7,7 @@ void display(void)
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     glPointSize(2.0);
     glColor3f(1.0,1.0,1.0);
-    //dibujando los ejes coordenados
+    //dibujando los ejes coordenados 
     glBegin(GL_LINES);
 		glVertex2f(-10.0f,0.0f);
 		glVertex2f(10.0f,0.0f);
@@ -15,24 +15,24 @@ void display(void)
 		glVertex2f(0.0f,-10.0f);
 	glEnd();
     
-    
     //dibujando ecuacion de la recta
     glBegin(GL_POINTS);
-    glColor3f(0.3,0.7,1.0);
+    glColor3f(1.0,0.0,0.0);
     GLfloat x,y,i;
     GLfloat angulo;
-    //f(t)=
+    //y= tan(x)
     //for para que dibuje punto por punto la ecuacion para los limites de -3π<x<3π 
-    for (i =-3*M_PI; i <= 3*M_PI; i+=0.001)
+    for (i =-3*M_PI; i <= 3*M_PI; i+=0.01)
 	{
 		x=i;
 		//ecuacion de la tangente
-		y=tan(i);
+		y=tan(x);
 		//pasando parametros de x,y del punto por el cual esta pasando
 		glVertex2f(x,y);
 	}
-   glFlush ();
-   glutSwapBuffers();
+	glEnd();
+    glFlush ();
+    glutSwapBuffers();
 
 }
 void init (void)

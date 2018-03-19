@@ -123,32 +123,32 @@ actividad/fast:
 	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/build
 .PHONY : actividad/fast
 
-onda_cotangente.o: onda_cotangente.cpp.o
+onda_tangente.o: onda_tangente.cpp.o
 
-.PHONY : onda_cotangente.o
+.PHONY : onda_tangente.o
 
 # target to build an object file
-onda_cotangente.cpp.o:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_cotangente.cpp.o
-.PHONY : onda_cotangente.cpp.o
+onda_tangente.cpp.o:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_tangente.cpp.o
+.PHONY : onda_tangente.cpp.o
 
-onda_cotangente.i: onda_cotangente.cpp.i
+onda_tangente.i: onda_tangente.cpp.i
 
-.PHONY : onda_cotangente.i
+.PHONY : onda_tangente.i
 
 # target to preprocess a source file
-onda_cotangente.cpp.i:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_cotangente.cpp.i
-.PHONY : onda_cotangente.cpp.i
+onda_tangente.cpp.i:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_tangente.cpp.i
+.PHONY : onda_tangente.cpp.i
 
-onda_cotangente.s: onda_cotangente.cpp.s
+onda_tangente.s: onda_tangente.cpp.s
 
-.PHONY : onda_cotangente.s
+.PHONY : onda_tangente.s
 
 # target to generate assembly for a file
-onda_cotangente.cpp.s:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_cotangente.cpp.s
-.PHONY : onda_cotangente.cpp.s
+onda_tangente.cpp.s:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_tangente.cpp.s
+.PHONY : onda_tangente.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... actividad"
-	@echo "... onda_cotangente.o"
-	@echo "... onda_cotangente.i"
-	@echo "... onda_cotangente.s"
+	@echo "... onda_tangente.o"
+	@echo "... onda_tangente.i"
+	@echo "... onda_tangente.s"
 .PHONY : help
 
 

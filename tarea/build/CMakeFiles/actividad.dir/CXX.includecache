@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/luis/open_gl/tarea/onda_cotangente.cpp
+/home/luis/open_gl/tarea/onda_tangente.cpp
 GL/gl.h
 -
 GL/glut.h

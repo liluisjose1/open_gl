@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/actividad.dir/onda_cotangente.cpp.o"
+  "CMakeFiles/actividad.dir/onda_tangente.cpp.o"
   "actividad.pdb"
   "actividad"
 )

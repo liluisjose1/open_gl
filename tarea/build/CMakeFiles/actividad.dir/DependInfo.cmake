@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/luis/open_gl/tarea/onda_cotangente.cpp" "/home/luis/open_gl/tarea/build/CMakeFiles/actividad.dir/onda_cotangente.cpp.o"
+  "/home/luis/open_gl/tarea/onda_tangente.cpp" "/home/luis/open_gl/tarea/build/CMakeFiles/actividad.dir/onda_tangente.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

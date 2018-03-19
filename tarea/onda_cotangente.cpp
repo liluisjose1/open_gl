@@ -1,9 +1,10 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include <math.h>
+#include <stdio.h>
 
-void display(void)
-{
+
+void display(void){
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     glPointSize(2.0);
     glColor3f(1.0,1.0,1.0);
@@ -20,20 +21,20 @@ void display(void)
     glBegin(GL_POINTS);
     glColor3f(0.3,0.7,1.0);
     GLfloat x,y,i;
-    GLfloat angulo;
-    //f(t)=
     //for para que dibuje punto por punto la ecuacion para los limites de -3π<x<3π 
-    for (i =-3*M_PI; i <= 3*M_PI; i+=0.001)
+    for (i =-3*M_PI; i <= 3*M_PI; i+=0.01)
 	{
 		x=i;
 		//ecuacion de la cotangente que es la inversa de la tangente
-		y=1/tan(i);
+		y=1/tan(x);
 		//pasando parametros de x,y del punto por el cual esta pasando
 		glVertex2f(x,y);
+		//printf ("Puntos X,Y: %d %d \n", x,y);
 	}
-   glFlush ();
-   glutSwapBuffers();
-
+	glEnd();
+	glFlush ();
+	glutSwapBuffers();
+   
 }
 void init (void)
 {
@@ -42,6 +43,7 @@ void init (void)
     //definiendo alto de ventanda hasta donde llegada la ecuacion un max de 10
     glOrtho(-10.0,10.0,-10.0,10.0,-10.0,10.0);
 }
+
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);

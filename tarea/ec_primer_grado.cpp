@@ -30,6 +30,7 @@ void display(void)
 		//pasando parametros de x,y del punto por el cual esta pasando
 		glVertex2f(x,y);
 	}
+		glEnd();
    glFlush ();
    glutSwapBuffers();
 

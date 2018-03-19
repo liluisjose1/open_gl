@@ -5,7 +5,7 @@
 void display(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-    glPointSize(3.0);
+    glPointSize(2.0);
     glColor3f(1.0,1.0,1.0);
     //dibujando los ejes coordenados
     glBegin(GL_LINES);
@@ -18,7 +18,7 @@ void display(void)
     
     //dibujando ecuacion de la recta
     glBegin(GL_POINTS);
-    glColor3f(0,1.0,1);
+    glColor3f(1,0,0);
     GLfloat x,y,i;
     //Y=2x2+3x-2=0
     //for para que dibuje punto por punto la ecuacion para los limites de -4<x<4 
@@ -30,6 +30,7 @@ void display(void)
 		//pasando parametros de x,y del punto por el cual esta pasando
 		glVertex2f(x,y);
 	}
+		glEnd();
    glFlush ();
    glutSwapBuffers();
 
