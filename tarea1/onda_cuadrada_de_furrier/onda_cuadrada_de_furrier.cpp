@@ -18,7 +18,7 @@ void display(void)
     
     //dibujando ecuacion con puntos
     glBegin(GL_POINTS);
-    glPointSize(3.0);
+    glPointSize(2.0);
     glColor3f(1.0,0.0,0.0);
     GLfloat x,y,i;
     GLfloat angulo;
@@ -27,26 +27,13 @@ void display(void)
     for (i =-3*M_PI; i <= 5*M_PI; i+=0.001)
 	{
 		x=i;
-		//funcion de onda
-		y=0.5*(sin(3*M_PI/4));
-		//y=1+(4*1)/M_PI + (sin(x)+ (1/3)*sin(3*x)+ (1/5)*sin(5*x)+(1/7)*sin(7*x)+(1/7)*sin(7*x)+(1/111)*sin(11*x)+(1/13)*sin(13*x));
+		//funcion de onda  de fourier
+		y = (20/M_PI)*(((sin(i))/1)+((sin(3*i))/3)+((sin(5*i))/5)+((sin(7*i))/7)+((sin(9*i))/9)+((sin(11*i))/11)+((sin(13*i))/13)+((sin(15*i))/15)+((sin(17*i))/17)+((sin(19*i))/19)+((sin(21*i))/21)+((sin(23*i))/23)+((sin(25*i))/25)+((sin(27*i))/27)+((sin(29*i))/29));
 		glVertex2f(x,y);
-		//y=(4/M_PI)*(sin(0.5*i)+(1/3)*sin(3*0.5*i)+(1/5)*sin(5*0.5*i));
-		//pasando parametros de x,y del punto por el cual esta pasando
-		/*if (y>0)
-		{
-			glVertex2f(x,1);
-		}
-		else
-		{
-			glVertex2f(x,-1);
-		}
-		*/
-		
 	}
 	glEnd();
-   glFlush ();
-   glutSwapBuffers();
+    glutSwapBuffers();
+	glFlush ();
 
 }
 void init (void)
