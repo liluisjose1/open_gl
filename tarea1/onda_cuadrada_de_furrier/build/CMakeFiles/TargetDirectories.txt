@@ -1,0 +1,3 @@
+/home/luis/open_gl/tarea1/onda_cuadrada_de_furrier/build/CMakeFiles/edit_cache.dir
+/home/luis/open_gl/tarea1/onda_cuadrada_de_furrier/build/CMakeFiles/rebuild_cache.dir
+/home/luis/open_gl/tarea1/onda_cuadrada_de_furrier/build/CMakeFiles/actividad.dir

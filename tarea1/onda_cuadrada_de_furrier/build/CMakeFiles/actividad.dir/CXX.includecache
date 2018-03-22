@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/open_gl/tarea1/onda_cuadrada_de_furrier/onda_cuadrada_de_furrier.cpp
+GL/gl.h
+-
+GL/glut.h
+-
+math.h
+-
+

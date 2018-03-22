@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/open_gl/tarea1/onda_cotangente/onda_cotangente.cpp
+GL/gl.h
+-
+GL/glut.h
+-
+math.h
+-
+stdio.h
+-
+

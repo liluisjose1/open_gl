@@ -1,0 +1,3 @@
+/home/luis/open_gl/tarea1/onda_tangente/build/CMakeFiles/edit_cache.dir
+/home/luis/open_gl/tarea1/onda_tangente/build/CMakeFiles/rebuild_cache.dir
+/home/luis/open_gl/tarea1/onda_tangente/build/CMakeFiles/actividad.dir

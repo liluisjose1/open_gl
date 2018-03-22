@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/actividad.dir/onda_cuadrada_de_furrier.cpp.o  -o actividad -rdynamic -lGLU -lGL -lglut -lXmu -lXi 

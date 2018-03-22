@@ -1,0 +1,3 @@
+/home/luis/open_gl/tarea1/ec_segundo_grado/build/CMakeFiles/edit_cache.dir
+/home/luis/open_gl/tarea1/ec_segundo_grado/build/CMakeFiles/rebuild_cache.dir
+/home/luis/open_gl/tarea1/ec_segundo_grado/build/CMakeFiles/actividad.dir

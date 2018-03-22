@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/open_gl/tarea1/ec_segundo_grado/ec_segundo_grado.cpp
+GL/gl.h
+-
+GL/glut.h
+-
+math.h
+-
+
