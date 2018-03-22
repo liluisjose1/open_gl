@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/open_gl/tarea1/onda_cuadrada_de_furrier
+CMAKE_SOURCE_DIR = /home/luis/open_gl/tarea1/onda_cuadrada_de_fourier
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/open_gl/tarea1/onda_cuadrada_de_furrier/build
+CMAKE_BINARY_DIR = /home/luis/open_gl/tarea1/onda_cuadrada_de_fourier/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/open_gl/tarea1/onda_cuadrada_de_furrier/build/CMakeFiles /home/luis/open_gl/tarea1/onda_cuadrada_de_furrier/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/open_gl/tarea1/onda_cuadrada_de_fourier/build/CMakeFiles /home/luis/open_gl/tarea1/onda_cuadrada_de_fourier/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/open_gl/tarea1/onda_cuadrada_de_furrier/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/open_gl/tarea1/onda_cuadrada_de_fourier/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ actividad/fast:
 	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/build
 .PHONY : actividad/fast
 
-onda_cuadrada_de_furrier.o: onda_cuadrada_de_furrier.cpp.o
+onda_cuadrada_de_fourier.o: onda_cuadrada_de_fourier.cpp.o
 
-.PHONY : onda_cuadrada_de_furrier.o
+.PHONY : onda_cuadrada_de_fourier.o
 
 # target to build an object file
-onda_cuadrada_de_furrier.cpp.o:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_cuadrada_de_furrier.cpp.o
-.PHONY : onda_cuadrada_de_furrier.cpp.o
+onda_cuadrada_de_fourier.cpp.o:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_cuadrada_de_fourier.cpp.o
+.PHONY : onda_cuadrada_de_fourier.cpp.o
 
-onda_cuadrada_de_furrier.i: onda_cuadrada_de_furrier.cpp.i
+onda_cuadrada_de_fourier.i: onda_cuadrada_de_fourier.cpp.i
 
-.PHONY : onda_cuadrada_de_furrier.i
+.PHONY : onda_cuadrada_de_fourier.i
 
 # target to preprocess a source file
-onda_cuadrada_de_furrier.cpp.i:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_cuadrada_de_furrier.cpp.i
-.PHONY : onda_cuadrada_de_furrier.cpp.i
+onda_cuadrada_de_fourier.cpp.i:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_cuadrada_de_fourier.cpp.i
+.PHONY : onda_cuadrada_de_fourier.cpp.i
 
-onda_cuadrada_de_furrier.s: onda_cuadrada_de_furrier.cpp.s
+onda_cuadrada_de_fourier.s: onda_cuadrada_de_fourier.cpp.s
 
-.PHONY : onda_cuadrada_de_furrier.s
+.PHONY : onda_cuadrada_de_fourier.s
 
 # target to generate assembly for a file
-onda_cuadrada_de_furrier.cpp.s:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_cuadrada_de_furrier.cpp.s
-.PHONY : onda_cuadrada_de_furrier.cpp.s
+onda_cuadrada_de_fourier.cpp.s:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/onda_cuadrada_de_fourier.cpp.s
+.PHONY : onda_cuadrada_de_fourier.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... actividad"
-	@echo "... onda_cuadrada_de_furrier.o"
-	@echo "... onda_cuadrada_de_furrier.i"
-	@echo "... onda_cuadrada_de_furrier.s"
+	@echo "... onda_cuadrada_de_fourier.o"
+	@echo "... onda_cuadrada_de_fourier.i"
+	@echo "... onda_cuadrada_de_fourier.s"
 .PHONY : help
 
 

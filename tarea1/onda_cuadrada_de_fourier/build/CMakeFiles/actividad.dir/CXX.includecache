@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/luis/open_gl/tarea1/onda_cuadrada_de_furrier/onda_cuadrada_de_furrier.cpp
+/home/luis/open_gl/tarea1/onda_cuadrada_de_fourier/onda_cuadrada_de_fourier.cpp
 GL/gl.h
 -
 GL/glut.h
