@@ -6,3 +6,6 @@ trabajos de opengl  - algoritmos gráficos
 
 # Tetera en 3D
 ![alt text](screenshot-teapot.png)
+
+# Casa
+![alt text](scree-casa.png)
