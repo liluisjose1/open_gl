@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/luis/open_gl/tarea2/engranajes/engranajes1.cpp
-math.h
--
-stdlib.h
+/home/luis/open_gl/tarea2/casa/casa1.cpp
+GL/gl.h
 -
 GL/glut.h
+-
+math.h
 -
 

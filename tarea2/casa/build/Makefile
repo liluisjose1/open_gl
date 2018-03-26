@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luis/open_gl/tarea2/engranajes
+CMAKE_SOURCE_DIR = /home/luis/open_gl/tarea2/casa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luis/open_gl/tarea2/engranajes/build
+CMAKE_BINARY_DIR = /home/luis/open_gl/tarea2/casa/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/open_gl/tarea2/engranajes/build/CMakeFiles /home/luis/open_gl/tarea2/engranajes/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/open_gl/tarea2/casa/build/CMakeFiles /home/luis/open_gl/tarea2/casa/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/open_gl/tarea2/engranajes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/luis/open_gl/tarea2/casa/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ actividad/fast:
 	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/build
 .PHONY : actividad/fast
 
-engranajes1.o: engranajes1.cpp.o
+casa1.o: casa1.cpp.o
 
-.PHONY : engranajes1.o
+.PHONY : casa1.o
 
 # target to build an object file
-engranajes1.cpp.o:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes1.cpp.o
-.PHONY : engranajes1.cpp.o
+casa1.cpp.o:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/casa1.cpp.o
+.PHONY : casa1.cpp.o
 
-engranajes1.i: engranajes1.cpp.i
+casa1.i: casa1.cpp.i
 
-.PHONY : engranajes1.i
+.PHONY : casa1.i
 
 # target to preprocess a source file
-engranajes1.cpp.i:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes1.cpp.i
-.PHONY : engranajes1.cpp.i
+casa1.cpp.i:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/casa1.cpp.i
+.PHONY : casa1.cpp.i
 
-engranajes1.s: engranajes1.cpp.s
+casa1.s: casa1.cpp.s
 
-.PHONY : engranajes1.s
+.PHONY : casa1.s
 
 # target to generate assembly for a file
-engranajes1.cpp.s:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes1.cpp.s
-.PHONY : engranajes1.cpp.s
+casa1.cpp.s:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/casa1.cpp.s
+.PHONY : casa1.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... actividad"
-	@echo "... engranajes1.o"
-	@echo "... engranajes1.i"
-	@echo "... engranajes1.s"
+	@echo "... casa1.o"
+	@echo "... casa1.i"
+	@echo "... casa1.s"
 .PHONY : help
 
 
