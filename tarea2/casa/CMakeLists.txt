@@ -24,7 +24,7 @@ if(NOT OPENGL_FOUND)
 endif(NOT OPENGL_FOUND)
 
 # Include Files
-add_executable(actividad casa1.cpp)
+add_executable(actividad casa.cpp)
 
 # Linking & stuff
 # create the program "points"
