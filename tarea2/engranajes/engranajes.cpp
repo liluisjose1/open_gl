@@ -29,40 +29,82 @@ void display(void)
 {
 	glClearColor(1.0,1.0,1.0,1.0);
 	glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-    glPointSize(2.0);
+    GLfloat angulo,angulo1,i; 
     glColor3f(0,0,0);
-    glBegin(GL_LINE_STRIP);
-    glColor3f(0,0,0);
-    GLfloat x,y,i;
-    //for para que dibuje punto por punto la ecuacion para los limites de -4<x<4 
-    for (i =0; i <= 2*M_PI; i+=0.001)
+	//negro
+	//dientes
+	glBegin(GL_QUADS);
+	for (i = 0; i <= 2*M_PI; i+=M_PI/5)
 	{
-		x=cos(i);
-		//ecuacion de la parabola externa de puente
-		y=sin(i);
-		//pasando parametros de x,y del punto por el cual esta pasando
+		angulo = i ;
+		glVertex2f(1*cos(angulo),1+1*sin(angulo));
+		glVertex2f(1*cos(angulo+M_PI/10),1+1*sin(angulo+M_PI/10));
+		glVertex2f(0.7*cos(angulo+M_PI/10),1+0.7*sin(angulo+M_PI/10));
+		glVertex2f(0.7*cos(angulo),1+0.7*sin(angulo));
 		
-		glVertex2f(0.2*x,0.5+0.2*y);
-		//glVertex2f(0.5*x,0.5+0.5*y);
 	}
 	glEnd();
-    glBegin(GL_QUAD_STRIP);
-    glPointSize(30.0);
-    glColor3f(0,0,0);
-    //for para que dibuje punto por punto la ecuacion para los limites de -4<x<4 
-    for (i =0; i <= 2*M_PI; i+=0.001)
-	{
-		x=cos(i);
-		//ecuacion de la parabola externa de puente
-		y=sin(i);
-		//pasando parametros de x,y del punto por el cual esta pasand
-		glVertex2f(0.5*x,0.5+0.5*y);
-	}
-	glEnd();
-
+	//Aros
+		glBegin(GL_LINE_STRIP);
+		for (i = 0; i <= 2*M_PI; i+=0.01)
+		{
+			angulo = i ;
+			glVertex2f(0.3*cos(angulo),1+0.3*sin(angulo));
+			glVertex2f(0.7*cos(angulo),1+0.7*sin(angulo));
+		}
+		glEnd();
 	
-   glFlush ();
-   glutSwapBuffers();
+	//Verde
+	//dientes
+	glColor3f(0.13,0.38,0.24);
+	glBegin(GL_QUADS);
+	for (i = 0; i <= 2*M_PI; i+=M_PI/5)
+	{
+		angulo = i ;
+		glVertex2f(-1.7+1*cos(angulo),1*sin(angulo));
+		glVertex2f(-1.7+1*cos(angulo+M_PI/10),1*sin(angulo+M_PI/10));
+		glVertex2f(-1.7+0.7*cos(angulo+M_PI/10),0.7*sin(angulo+M_PI/10));
+		glVertex2f(-1.7+0.7*cos(angulo),0.7*sin(angulo));
+		
+	}
+	glEnd();
+	//Aros
+		glBegin(GL_LINE_STRIP);
+		for (i = 0; i <= 2*M_PI; i+=0.01)
+		{
+			angulo = i ;
+			glVertex2f(-1.7+0.3*cos(angulo),0.3*sin(angulo));
+			glVertex2f(-1.7+0.7*cos(angulo),0.7*sin(angulo));
+		}
+		glEnd();
+	
+	//Gris
+	//dientes
+	glColor3f(0.61,0.61,0.61);
+	glBegin(GL_QUADS);
+	for (i = 0; i <= 2*M_PI; i+=M_PI/5)
+	{
+		angulo = i ;
+		glVertex2f(1.7+1*cos(angulo),1*sin(angulo));
+		glVertex2f(1.7+1*cos(angulo+M_PI/10),1*sin(angulo+M_PI/10));
+		glVertex2f(1.7+0.7*cos(angulo+M_PI/10),0.7*sin(angulo+M_PI/10));
+		glVertex2f(1.7+0.7*cos(angulo),0.7*sin(angulo));
+		
+	}
+	glEnd();
+	//Aros
+		glBegin(GL_LINE_STRIP);
+		for (i = 0; i <= 2*M_PI; i+=0.01)
+		{
+			angulo = i ;
+			glVertex2f(1.7+0.3*cos(angulo),0.3*sin(angulo));
+			glVertex2f(1.7+0.7*cos(angulo),0.7*sin(angulo));
+		}
+		glEnd();
+
+		
+	glutSwapBuffers();
+	glFlush ();
 
 }
 void init (void)
@@ -70,14 +112,14 @@ void init (void)
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     //definiendo los limites de los ejes
-    glOrtho(-2.0,2.0,-2.0,2.0,-2.0,2.0);
+    glOrtho(-3.0,3.0,-3.0,3.0,-3.0,3.0);
 }
 int main(int argc, char** argv)
 {
     glutInit(&argc, argv);
     glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize (500, 500);
-    glutInitWindowPosition ((glutGet(GLUT_SCREEN_WIDTH)-800)/2,(glutGet(GLUT_SCREEN_HEIGHT)-500)/2);
+    glutInitWindowPosition ((glutGet(GLUT_SCREEN_WIDTH)-500)/2,(glutGet(GLUT_SCREEN_HEIGHT)-500)/2);
     glutCreateWindow ("Engranajes IM15005");
     init ();
     glutDisplayFunc(display);

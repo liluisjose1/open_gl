@@ -57,38 +57,38 @@ include CMakeFiles/actividad.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/actividad.dir/flags.make
 
-CMakeFiles/actividad.dir/engranajes1.cpp.o: CMakeFiles/actividad.dir/flags.make
-CMakeFiles/actividad.dir/engranajes1.cpp.o: ../engranajes1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/open_gl/tarea2/engranajes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/actividad.dir/engranajes1.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/actividad.dir/engranajes1.cpp.o -c /home/luis/open_gl/tarea2/engranajes/engranajes1.cpp
+CMakeFiles/actividad.dir/engranajes.cpp.o: CMakeFiles/actividad.dir/flags.make
+CMakeFiles/actividad.dir/engranajes.cpp.o: ../engranajes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luis/open_gl/tarea2/engranajes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/actividad.dir/engranajes.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/actividad.dir/engranajes.cpp.o -c /home/luis/open_gl/tarea2/engranajes/engranajes.cpp
 
-CMakeFiles/actividad.dir/engranajes1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/actividad.dir/engranajes1.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/open_gl/tarea2/engranajes/engranajes1.cpp > CMakeFiles/actividad.dir/engranajes1.cpp.i
+CMakeFiles/actividad.dir/engranajes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/actividad.dir/engranajes.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luis/open_gl/tarea2/engranajes/engranajes.cpp > CMakeFiles/actividad.dir/engranajes.cpp.i
 
-CMakeFiles/actividad.dir/engranajes1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/actividad.dir/engranajes1.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/open_gl/tarea2/engranajes/engranajes1.cpp -o CMakeFiles/actividad.dir/engranajes1.cpp.s
+CMakeFiles/actividad.dir/engranajes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/actividad.dir/engranajes.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luis/open_gl/tarea2/engranajes/engranajes.cpp -o CMakeFiles/actividad.dir/engranajes.cpp.s
 
-CMakeFiles/actividad.dir/engranajes1.cpp.o.requires:
+CMakeFiles/actividad.dir/engranajes.cpp.o.requires:
 
-.PHONY : CMakeFiles/actividad.dir/engranajes1.cpp.o.requires
+.PHONY : CMakeFiles/actividad.dir/engranajes.cpp.o.requires
 
-CMakeFiles/actividad.dir/engranajes1.cpp.o.provides: CMakeFiles/actividad.dir/engranajes1.cpp.o.requires
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes1.cpp.o.provides.build
-.PHONY : CMakeFiles/actividad.dir/engranajes1.cpp.o.provides
+CMakeFiles/actividad.dir/engranajes.cpp.o.provides: CMakeFiles/actividad.dir/engranajes.cpp.o.requires
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes.cpp.o.provides.build
+.PHONY : CMakeFiles/actividad.dir/engranajes.cpp.o.provides
 
-CMakeFiles/actividad.dir/engranajes1.cpp.o.provides.build: CMakeFiles/actividad.dir/engranajes1.cpp.o
+CMakeFiles/actividad.dir/engranajes.cpp.o.provides.build: CMakeFiles/actividad.dir/engranajes.cpp.o
 
 
 # Object files for target actividad
 actividad_OBJECTS = \
-"CMakeFiles/actividad.dir/engranajes1.cpp.o"
+"CMakeFiles/actividad.dir/engranajes.cpp.o"
 
 # External object files for target actividad
 actividad_EXTERNAL_OBJECTS =
 
-actividad: CMakeFiles/actividad.dir/engranajes1.cpp.o
+actividad: CMakeFiles/actividad.dir/engranajes.cpp.o
 actividad: CMakeFiles/actividad.dir/build.make
 actividad: /usr/lib/x86_64-linux-gnu/libGLU.so
 actividad: /usr/lib/x86_64-linux-gnu/libGL.so
@@ -104,7 +104,7 @@ CMakeFiles/actividad.dir/build: actividad
 
 .PHONY : CMakeFiles/actividad.dir/build
 
-CMakeFiles/actividad.dir/requires: CMakeFiles/actividad.dir/engranajes1.cpp.o.requires
+CMakeFiles/actividad.dir/requires: CMakeFiles/actividad.dir/engranajes.cpp.o.requires
 
 .PHONY : CMakeFiles/actividad.dir/requires
 

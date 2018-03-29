@@ -123,32 +123,32 @@ actividad/fast:
 	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/build
 .PHONY : actividad/fast
 
-engranajes1.o: engranajes1.cpp.o
+engranajes.o: engranajes.cpp.o
 
-.PHONY : engranajes1.o
+.PHONY : engranajes.o
 
 # target to build an object file
-engranajes1.cpp.o:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes1.cpp.o
-.PHONY : engranajes1.cpp.o
+engranajes.cpp.o:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes.cpp.o
+.PHONY : engranajes.cpp.o
 
-engranajes1.i: engranajes1.cpp.i
+engranajes.i: engranajes.cpp.i
 
-.PHONY : engranajes1.i
+.PHONY : engranajes.i
 
 # target to preprocess a source file
-engranajes1.cpp.i:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes1.cpp.i
-.PHONY : engranajes1.cpp.i
+engranajes.cpp.i:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes.cpp.i
+.PHONY : engranajes.cpp.i
 
-engranajes1.s: engranajes1.cpp.s
+engranajes.s: engranajes.cpp.s
 
-.PHONY : engranajes1.s
+.PHONY : engranajes.s
 
 # target to generate assembly for a file
-engranajes1.cpp.s:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes1.cpp.s
-.PHONY : engranajes1.cpp.s
+engranajes.cpp.s:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/engranajes.cpp.s
+.PHONY : engranajes.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... actividad"
-	@echo "... engranajes1.o"
-	@echo "... engranajes1.i"
-	@echo "... engranajes1.s"
+	@echo "... engranajes.o"
+	@echo "... engranajes.i"
+	@echo "... engranajes.s"
 .PHONY : help
 
 
