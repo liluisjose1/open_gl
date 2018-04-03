@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/actividad.bin.dir/engranajes.cpp.o  -o actividad.bin -rdynamic -lGLU -lGL -lglut -lXmu -lXi 

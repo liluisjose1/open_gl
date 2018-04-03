@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/luis/open_gl/tarea2/casa/casa.cpp
+/home/luis/open_gl/tarea2/casa/casa2D.cpp
 GL/gl.h
 -
 GL/glut.h

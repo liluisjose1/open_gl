@@ -123,32 +123,32 @@ actividad/fast:
 	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/build
 .PHONY : actividad/fast
 
-casa.o: casa.cpp.o
+casa2D.o: casa2D.cpp.o
 
-.PHONY : casa.o
+.PHONY : casa2D.o
 
 # target to build an object file
-casa.cpp.o:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/casa.cpp.o
-.PHONY : casa.cpp.o
+casa2D.cpp.o:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/casa2D.cpp.o
+.PHONY : casa2D.cpp.o
 
-casa.i: casa.cpp.i
+casa2D.i: casa2D.cpp.i
 
-.PHONY : casa.i
+.PHONY : casa2D.i
 
 # target to preprocess a source file
-casa.cpp.i:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/casa.cpp.i
-.PHONY : casa.cpp.i
+casa2D.cpp.i:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/casa2D.cpp.i
+.PHONY : casa2D.cpp.i
 
-casa.s: casa.cpp.s
+casa2D.s: casa2D.cpp.s
 
-.PHONY : casa.s
+.PHONY : casa2D.s
 
 # target to generate assembly for a file
-casa.cpp.s:
-	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/casa.cpp.s
-.PHONY : casa.cpp.s
+casa2D.cpp.s:
+	$(MAKE) -f CMakeFiles/actividad.dir/build.make CMakeFiles/actividad.dir/casa2D.cpp.s
+.PHONY : casa2D.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... actividad"
-	@echo "... casa.o"
-	@echo "... casa.i"
-	@echo "... casa.s"
+	@echo "... casa2D.o"
+	@echo "... casa2D.i"
+	@echo "... casa2D.s"
 .PHONY : help
 
 

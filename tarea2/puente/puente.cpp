@@ -141,7 +141,7 @@ void display(void)
     glBegin(GL_LINE_STRIP);
     glColor3f(0,0,0);
     GLfloat x,y,y2,i,i2;
-    //for para que dibuje punto por punto la ecuacion para los limites de -4<x<4 
+    //for para que dibuje punto por punto la ecuacion 
     for (i =-2.5; i <= 2.5; i+=0.001)
 	{
 		x=i;
@@ -154,7 +154,7 @@ void display(void)
     //dibujando ecuacion de la recta
     glBegin(GL_LINE_STRIP);
     glColor3f(0,0,0);
-    //for para que dibuje punto por punto la ecuacion para los limites de -4<x<4 
+    //for para que dibuje punto por punto la ecuacion
     for (i2 =-2.33; i2 <= 2.33; i2+=0.001)
 	{
 		x=i2;

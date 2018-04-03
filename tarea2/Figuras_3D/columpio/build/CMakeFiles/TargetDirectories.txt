@@ -1,0 +1,3 @@
+/home/luis/open_gl/tarea2/Figuras_3D/columpio/build/CMakeFiles/edit_cache.dir
+/home/luis/open_gl/tarea2/Figuras_3D/columpio/build/CMakeFiles/rebuild_cache.dir
+/home/luis/open_gl/tarea2/Figuras_3D/columpio/build/CMakeFiles/actividad.dir

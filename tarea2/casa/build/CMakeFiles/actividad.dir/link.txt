@@ -1,1 +1,1 @@
-/usr/bin/c++      CMakeFiles/actividad.dir/casa.cpp.o  -o actividad -rdynamic -lGLU -lGL -lglut -lXmu -lXi 
+/usr/bin/c++      CMakeFiles/actividad.dir/casa2D.cpp.o  -o actividad -rdynamic -lGLU -lGL -lglut -lXmu -lXi 
