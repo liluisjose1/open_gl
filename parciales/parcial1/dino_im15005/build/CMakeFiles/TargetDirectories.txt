@@ -1,0 +1,3 @@
+/home/luis/open_gl/parciales/parcial1/dino_im15005/build/CMakeFiles/edit_cache.dir
+/home/luis/open_gl/parciales/parcial1/dino_im15005/build/CMakeFiles/rebuild_cache.dir
+/home/luis/open_gl/parciales/parcial1/dino_im15005/build/CMakeFiles/actividad.dir

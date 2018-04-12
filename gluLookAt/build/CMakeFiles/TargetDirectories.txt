@@ -1,3 +1,0 @@
-/home/luis/open_gl/Actividad#2/gluLookAt/build/CMakeFiles/rebuild_cache.dir
-/home/luis/open_gl/Actividad#2/gluLookAt/build/CMakeFiles/edit_cache.dir
-/home/luis/open_gl/Actividad#2/gluLookAt/build/CMakeFiles/tarea.dir

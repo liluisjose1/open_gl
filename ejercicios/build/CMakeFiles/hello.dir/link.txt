@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/hello.dir/main-tarea.cpp.o  -o hello -rdynamic -lGLU -lGL -lglut -lXmu -lXi 

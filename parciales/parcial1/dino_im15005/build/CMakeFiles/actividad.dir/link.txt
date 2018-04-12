@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/actividad.dir/dino_parcial1_im15005.cpp.o  -o actividad -rdynamic -lGLU -lGL -lglut -lXmu -lXi 

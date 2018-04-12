@@ -1,3 +1,0 @@
-/home/luis/open_gl/cubo/build/CMakeFiles/rebuild_cache.dir
-/home/luis/open_gl/cubo/build/CMakeFiles/edit_cache.dir
-/home/luis/open_gl/cubo/build/CMakeFiles/cubo.dir

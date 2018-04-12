@@ -1,3 +1,0 @@
-/home/luis/opengl/build/CMakeFiles/rebuild_cache.dir
-/home/luis/opengl/build/CMakeFiles/edit_cache.dir
-/home/luis/opengl/build/CMakeFiles/hello.dir

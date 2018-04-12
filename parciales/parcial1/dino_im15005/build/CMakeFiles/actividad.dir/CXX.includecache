@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/open_gl/parciales/parcial1/dino_im15005/dino_parcial1_im15005.cpp
+math.h
+-
+GL/gl.h
+-
+GL/glut.h
+-
+

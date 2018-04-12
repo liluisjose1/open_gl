@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/actividad.dir/murcielago_parcial1_im15005.cpp.o  -o actividad -rdynamic -lGLU -lGL -lglut -lXmu -lXi 
