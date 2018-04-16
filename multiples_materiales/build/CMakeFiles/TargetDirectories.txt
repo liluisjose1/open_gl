@@ -1,0 +1,3 @@
+/home/luis/open_gl/multiples_materiales/build/CMakeFiles/edit_cache.dir
+/home/luis/open_gl/multiples_materiales/build/CMakeFiles/rebuild_cache.dir
+/home/luis/open_gl/multiples_materiales/build/CMakeFiles/actividad.dir

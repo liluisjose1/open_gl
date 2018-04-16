@@ -80,6 +80,8 @@ int main(int argc, char** argv)
         glutInitWindowPosition ((glutGet(GLUT_SCREEN_WIDTH)-600)/2,(glutGet(GLUT_SCREEN_HEIGHT)-420)/2);
     glutCreateWindow ("Murcielago im15005 ");
     init ();
+    // Habilitar la prueba de profundidad de Z-buffer
+    glEnable(GL_DEPTH_TEST);
     glutDisplayFunc(display);
     glutMainLoop();
     return 0;

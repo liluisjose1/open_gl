@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/open_gl/multiples_materiales/control_luz.cpp
+GL/gl.h
+-
+GL/glu.h
+-
+GL/glut.h
+-
+stdio.h
+-
+
