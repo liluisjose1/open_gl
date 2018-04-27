@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/material.dir/material1.cpp.o  -o material -rdynamic -lGLU -lGL -lglut -lXmu -lXi 
