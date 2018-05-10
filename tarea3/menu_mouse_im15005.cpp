@@ -48,7 +48,7 @@ void init(void)
 {
 	glEnable(GL_DEPTH_TEST);
 	// Ubicamos la fuente de luz en el punto
-    GLfloat light_position[] = { 1.0, 1.0, 1.0, 0.0 };
+   // GLfloat light_position[] = { 1.0, 1.0, 1.0, 0.0 };
 	// ejemplo de ambiente
     GLfloat lmodel_ambient [] = { 0.2, 0.2, 0.2, 1.0 };
 	// Activamos la fuente de luz

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/estadio.dir/estadio.cpp.o  -o estadio  -L/usr/lib/SOIL -Wl,-rpath,/usr/lib/SOIL -rdynamic -lGLU -lGL -lglut -lXmu -lXi -lSOIL 

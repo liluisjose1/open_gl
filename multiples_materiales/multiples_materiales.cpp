@@ -55,7 +55,7 @@ static void display(void)
     GLfloat light_ambient[]  = { 0.0f, 0.0f, 0.0f, 1.0f };
     GLfloat light_diffuse[]  = { 1.0f, 1.0f, 1.0f, 1.0f };
     GLfloat light_specular[] = { 1.0f, 1.0f, 1.0f, 1.0f };
-    GLfloat light_position[] = { -20.0f, -50.0f, 50.0f, 0.0f };
+    GLfloat light_position[] = { 20.0f, 50.0f, -50.0f, 0.0f };
    // GLfloat light_position[] = { 1.0, 1.0, 1.0, 0.0 };
 
     GLfloat mat_ambient[]    = { 0.7f, 0.7f, 0.7f, 1.0f };

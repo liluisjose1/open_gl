@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/open_gl/laboratorio_2/casa.cpp
+math.h
+-
+GL/gl.h
+-
+GL/glut.h
+-
+SOIL/SOIL.h
+-
+

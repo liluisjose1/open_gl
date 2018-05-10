@@ -17,7 +17,7 @@ void init(void)
 
 void display(void)
 {
-   GLfloat position[] = { 1.0, 0.0, 1.5, 1.0 };
+   GLfloat position[] = { 0.0, 0.0, 1.5, 1.0 };
 
    glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
    glPushMatrix ();
@@ -26,7 +26,7 @@ void display(void)
    glPushMatrix ();
    glRotated ((GLdouble) girox, 1.0, 0.0, 0.0);
    glRotated ((GLdouble) giroy, 0.0, 1.0, 0.0);
-   glLightfv(GL_LIGHT0, GL_POSITION, position);
+   glLightfv (GL_LIGHT0, GL_POSITION, position);
 
    glTranslated (0.0, 0.0, 1.5);
    glDisable (GL_LIGHTING);
@@ -35,7 +35,7 @@ void display(void)
    glEnable (GL_LIGHTING);
    glPopMatrix ();
 
-   glutSolidTorus (0.275, 0.85, 80, 80);
+   glutSolidTorus (0.275, 0.85, 8, 15);
    glPopMatrix ();
    glFlush ();
 }
@@ -72,20 +72,6 @@ void mouse(int button, int state, int x, int y)
          break;
    }
 }
-void specialKeys( int key, int x, int y )
-{
-    if (key == GLUT_KEY_RIGHT)
-        giroy = (giroy + 10) % 360;
-    else if (key == GLUT_KEY_LEFT)
-        giroy = (giroy + 10) % 360;
-    else if (key == GLUT_KEY_UP)
-        girox = (girox + 10) % 360;
-    else if (key == GLUT_KEY_DOWN)
-        girox = (girox + 10) % 360;
-    glutPostRedisplay();
- 
-}
- 
 int main(int argc, char** argv)
 {
    glutInit(&argc, argv);
@@ -97,7 +83,6 @@ int main(int argc, char** argv)
    glutDisplayFunc(display);
    glutReshapeFunc(reshape);
    glutMouseFunc(mouse);
-   glutSpecialFunc(specialKeys);
    glutMainLoop();
    return 0;
 }
