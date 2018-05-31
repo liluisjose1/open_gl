@@ -1,0 +1,3 @@
+/home/luis/Escritorio/dino_colision/build/CMakeFiles/rebuild_cache.dir
+/home/luis/Escritorio/dino_colision/build/CMakeFiles/edit_cache.dir
+/home/luis/Escritorio/dino_colision/build/CMakeFiles/dino_game.dir

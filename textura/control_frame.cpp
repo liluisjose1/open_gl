@@ -68,7 +68,7 @@ void updateFrame() {
 	//glColor3f(0.0,1.0,0.0);
 	//Hacemos que la tetera gire 
 	for (int i=3; i<=100; i++){
-		rotateY=rotateY-= i;
+		rotateY-= i;
 	}
    //Verificamos el numero de frames para detener animación 
    if(frameNumber==200)

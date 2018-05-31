@@ -13,4 +13,6 @@ GL/gl.h
 -
 GL/glut.h
 -
+SOIL/SOIL.h
+-
 

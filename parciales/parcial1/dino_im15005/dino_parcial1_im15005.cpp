@@ -25,7 +25,7 @@
 #include <math.h>
 #include <GL/gl.h>
 #include <GL/glut.h>
- 
+#include <SOIL/SOIL.h>
 //Definimos variables
 double rotate_y=0;
 double rotate_x=0;
@@ -34,9 +34,29 @@ double rotate_z=0;
 GLfloat X = 0.0f;
 GLfloat Y = 0.1f;
 GLfloat Z = 0.0f;
-GLfloat scale = 0.29f;
- 
+GLfloat scale = 0.1f;
+GLuint texture[0];
 void escena(){
+		            //texturas
+                texture[0] = SOIL_load_OGL_texture // cargamos la imagen
+                     (
+                "img/dino.jpg",
+                SOIL_LOAD_AUTO,
+                SOIL_CREATE_NEW_ID,
+                SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT
+                     );
+	    glEnable(GL_TEXTURE_2D);
+		glBindTexture(GL_TEXTURE_2D, texture[0]);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	  glBegin(GL_QUADS);
+	  glColor3f(1.0,1.0,1.0);
+		glTexCoord2f(0.0f,   1.0f);     glVertex2f(-10, 10);
+		glTexCoord2f(1.0f,   1.0f);     glVertex2f(10, 10);
+		glTexCoord2f(1.0f,   0.0f);     glVertex2f(10, -10);
+		glTexCoord2f(0.0f,   0.0f);     glVertex2f(-10, -10);
+      glEnd();
+			
 		//suelo
 		glBegin(GL_QUADS);
 			glColor3f(0,0,0);
@@ -72,6 +92,7 @@ void escena(){
 }
 void dino_movimiento(){
 		
+
     // Resetear transformaciones
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
@@ -80,6 +101,8 @@ void dino_movimiento(){
     glTranslatef(X, Y, Z); 	// Transladar en los 3 Ejes
     // Otras transformaciones
     glScalef(scale, scale, scale);
+    
+
       glBegin(GL_QUADS);
 			//CABEZA
 			glColor3f(0,0,0);
@@ -196,7 +219,7 @@ void dino_movimiento(){
 void display()
 {
     //  Borrar pantalla y Z-buffer
-    glClearColor(1.0,1.0,1.0,1.0);
+    //glClearColor(1.0,1.0,1.0,1.0);
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 	 
 	 //funciones

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/Escritorio/dino_colision/dino_game_colision.cpp
+math.h
+-
+GL/gl.h
+-
+GL/glut.h
+-
+SOIL/SOIL.h
+-
+iostream
+-
+SDL2/SDL.h
+-
+
