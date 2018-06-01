@@ -27,6 +27,7 @@ GLfloat Y = -0.2f;
 int buffer = 0;
 //interrupciones
 bool pause = false;
+bool abajo = false;
 char text[32];
 //salto de dino
 float posY = 1.0f, velY = 0.0f;
@@ -139,12 +140,12 @@ void win() {
 
 }
 void objetos() {
-	//-------------------------------- textura arbol ---------------------------
+	//-------------------------------- textura Cactus ---------------------------
 	glPushMatrix();
 	glScalef(scale, scale, scale);
 	glTranslatef(posX, -2.5, 0.0f);
 	texture[2] = SOIL_load_OGL_texture	// cargamos la imagen
-		("../img/arbol.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT);
+		("../img/cactus.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT);
 	glEnable(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, texture[2]);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -163,12 +164,12 @@ void objetos() {
 	glDisable(GL_BLEND);
 	glDisable(GL_TEXTURE_2D);
 	glPopMatrix();
-		//-------------------------------- textura caja TNT ---------------------------
+		//-------------------------------- textura Cavernicola ---------------------------
 	glPushMatrix();
 	glScalef(scale, scale, scale);
 	glTranslatef(posXtnt, -2.0, 0.0f);
 	texture1[0] = SOIL_load_OGL_texture	// cargamos la imagen
-		("../img/tnt.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT);
+		("../img/caver.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT);
 	glEnable(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, texture1[0]);
 
@@ -179,20 +180,20 @@ void objetos() {
 	glColor3f(1.0, 0.3, 0.86);
 	glBegin(GL_QUADS);
 	glColor3f(1.0, 1.0, 1.0);
-	glTexCoord2f(0.0f, 1.0f);	glVertex2f(0, 2);
-	glTexCoord2f(1.0f, 1.0f);	glVertex2f(1, 2);
+	glTexCoord2f(0.0f, 1.0f);	glVertex2f(0, 3);
+	glTexCoord2f(1.0f, 1.0f);	glVertex2f(1, 3);
 	glTexCoord2f(1.0f, 0.0f);	glVertex2f(1, 0);
 	glTexCoord2f(0.0f, 0.0f);	glVertex2f(0, 0);
 	glEnd();
 	glDisable(GL_BLEND);
 	glDisable(GL_TEXTURE_2D);
 	glPopMatrix();
-	//-------------------------------- textura elicoptero ---------------------------
+	//-------------------------------- textura Platillo ---------------------------
 	glPushMatrix();
 	glScalef(scale, scale, scale);
 	glTranslatef(posXbird, 5.0, 0.0f);
 	texture1[1] = SOIL_load_OGL_texture	// cargamos la imagen
-		("../img/bird.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT);
+		("../img/platillo.png", SOIL_LOAD_AUTO, SOIL_CREATE_NEW_ID, SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT);
 	glEnable(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, texture1[1]);
 
@@ -228,8 +229,6 @@ void dino() {
 		glColor3f(1.0, 0.0, 0.0);
 	}
 	glBegin(GL_QUADS);
-
-
 	glVertex2f(0.4, 1.2);
 	glVertex2f(0.4, 1.4);
 	glVertex2f(0.2, 1.4);
@@ -318,6 +317,146 @@ void dino() {
 
 		//DERECHA ARRIBA
 		glVertex2f(-0.0, -0);
+		glVertex2f(-0.0, -2.0);
+		glVertex2f(-0.2, -2.0);
+		glVertex2f(-0.2, -0);
+
+		glVertex2f(-0.2, -1.8);
+		glVertex2f(0.25, -1.8);
+		glVertex2f(0.25, -2.0);
+		glVertex2f(-0.2, -2.0);
+
+		//IZQUIERDA ABAJO
+		glVertex2f(-0.7, -1.8);
+		glVertex2f(-0.7, -2.3);
+		glVertex2f(-0.90, -2.3);
+		glVertex2f(-0.90, -1.8);
+
+		glVertex2f(-0.7, -2.1);
+		glVertex2f(-0.50, -2.1);
+		glVertex2f(-0.50, -2.3);
+		glVertex2f(-0.7, -2.3);
+		glEnd();
+	} else {
+		glBegin(GL_QUADS);
+		//buffer
+
+		//DERECHA ABAJO
+		glVertex2f(-0.0, -0);
+		glVertex2f(-0.0, -2.3);
+		glVertex2f(-0.2, -2.3);
+		glVertex2f(-0.2, -0);
+
+		glVertex2f(-0.2, -2.1);
+		glVertex2f(0.25, -2.1);
+		glVertex2f(0.25, -2.3);
+		glVertex2f(-0.2, -2.3);
+
+		//IZQUIERDA ARRIBA
+		glVertex2f(-0.7, -1.6);
+		glVertex2f(-0.7, -2.0);
+		glVertex2f(-0.90, -2.0);
+		glVertex2f(-0.90, -1.6);
+
+		glVertex2f(-0.7, -1.8);
+		glVertex2f(-0.50, -1.8);
+		glVertex2f(-0.50, -2.0);
+		glVertex2f(-0.7, -2.0);
+
+		glEnd();
+	}
+
+	glPopMatrix();
+}
+void dino1() {
+
+	// Resetear transformaciones
+	glPushMatrix();
+	glTranslatef(-0.5, posY, 0.0);
+	glScalef(0.03, scale, scale);
+	//OJO
+	if (pause==false)
+	{
+		glColor3f(1.0, 1.0, 1.0);
+	}
+	else
+	{
+		glColor3f(1.0, 0.0, 0.0);
+	}
+	glBegin(GL_QUADS);
+	glVertex2f(0.8,0.0);
+	glVertex2f(1.0,0.0);
+	glVertex2f(1.0,-0.2);
+	glVertex2f(0.8,-0.2);
+	glEnd();
+	glBegin(GL_QUADS);
+
+	//CABEZA
+	glColor3f(0,0,0);
+	glVertex2f(0.0,-0.2);
+	glVertex2f(0.4,-0.2);
+	glVertex2f(0.4,-1.2);
+	glVertex2f(0.0,-1.2);
+	
+	glVertex2f(0.4,0.2);
+	glVertex2f(0.8,0.2);
+	glVertex2f(0.8,-1.4);
+	glVertex2f(0.4,-1.4);
+
+	glVertex2f(0.8,0.2);
+	glVertex2f(2.0,0.2);
+	glVertex2f(2.0,-0.9);
+	glVertex2f(0.8,-0.9);
+	
+	glVertex2f(0.6,0.2);
+	glVertex2f(1.8,0.2);
+	glVertex2f(1.8,0.4);
+	glVertex2f(0.6,0.4);
+			
+	glVertex2f(0.8,-1.1);
+	glVertex2f(1.5,-1.1);
+	glVertex2f(1.5,-1.4);
+	glVertex2f(0.8,-1.4);
+	//ESPALDA
+	glColor3f(0,0,0);
+	glVertex2f(0.0,0.0);
+	glVertex2f(0.0,-1.8);
+	glVertex2f(-0.4,-1.8);
+	glVertex2f(-0.4,0.0);
+			
+	glVertex2f(-0.4,-0.3);
+	glVertex2f(-0.4,-1.6);
+	glVertex2f(-0.7,-1.6);
+	glVertex2f(-0.7,-0.3);
+			
+	glVertex2f(-0.7,-0.5);
+	glVertex2f(-0.7,-1.8);
+	glVertex2f(-1.1,-1.8);
+	glVertex2f(-1.1,-0.5);
+	//COLA
+	glVertex2f(-1.1,-0.3);
+	glVertex2f(-1.1,-1.6);
+	glVertex2f(-1.3,-1.6);
+	glVertex2f(-1.3,-0.3);
+	
+	glVertex2f(-1.3,-0.2);
+	glVertex2f(-1.3,-1.5);
+	glVertex2f(-1.5,-1.5);
+	glVertex2f(-1.5,-0.2);
+	
+	glVertex2f(-1.5,0.2);
+	glVertex2f(-1.5,-1.2);
+	glVertex2f(-1.7,-1.2);
+	glVertex2f(-1.7,0.2);
+	glEnd();
+
+	//si buffer es par que levante pata derecha
+	if (buffer % 2 == 0) {
+		glBegin(GL_QUADS);
+		//buffer
+
+		//DERECHA ARRIBA
+		glVertex2f(-0.0, -0);
 		glVertex2f(-0.0, -2.2);
 		glVertex2f(-0.2, -2.2);
 		glVertex2f(-0.2, -0);
@@ -380,18 +519,32 @@ void display() {
 		glColor3f(0.62, 0.09, 0.02);
 		glRasterPos2f(-0.2, -0.8);
 		for (int i = 0; text[i] != '\0'; i++) {
-			glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);
+	glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24, text[i]);
 		}
 	} else if (buffer > 500) {
 		escena1();
 		nameText1(text);
-		dino();
+		if (abajo==false)
+		{
+			dino();
+		}
+		else
+		{
+			dino1();
+		}
 		objetos();
 		text1();
 	} else {
 		escena0();
 		nameText1(text);
-		dino();
+		if (abajo==false)
+		{
+			dino();
+		}
+		else
+		{
+			dino1();
+		}
 		objetos();
 		text1();
 	}
@@ -402,8 +555,8 @@ void display() {
 
 // --------------- Para animación  ------------------------------------------
 
-int animating = 0;				// 0 sin animación 
-						// Se cambia con la llamada a las funciones startAnimation() and pauseAnimation()
+int animating = 0;		// 0 sin animación 
+		// Se cambia con la llamada a las funciones startAnimation() and pauseAnimation()
 
 void pauseAnimation() {
 	// Llamamo a la función para detener la animación 
@@ -450,40 +603,40 @@ void updateFrame() {
 	else {
 		//ACTUALIZAR ESCENAS SI EL ESTADO NO ES VERDADERO
 		if (pause != true) {
-			SDL_PauseAudio(0);
-			buffer += 1.0;
-			if (posX < -15) {
-				posX = 10;
+	SDL_PauseAudio(0);
+	buffer += 1.0;
+	if (posX < -15) {
+		posX = 10;
 
 
-			} else if (X < -5.0f) {
-				X = 0;
-			} else if (posXtnt < -15) {
-				posXtnt = 20;
-			} else if (posXbird < -15) {
-				posXbird = 30;
-			}
+	} else if (X < -5.0f) {
+		X = 0;
+	} else if (posXtnt < -15) {
+		posXtnt = 20;
+	} else if (posXbird < -15) {
+		posXbird = 30;
+	}
 
-			else {
+	else {
 
-				posX -= 0.2;
-				posXtnt -= 0.25;
-				posXbird -= 0.3;
-				X -= 0.15;
-				velY += -0.005f;
-				posY += velY;
-				if (posY < 0.0f) {
-					posY -= 0.1f;
-					velY *= 0;
-					if (velY < 0.01f) {
-						velY = 0.0f;
-						posY = 0;
-					}
-				}
-			}
+		posX -= 0.2;
+		posXtnt -= 0.25;
+		posXbird -= 0.3;
+		X -= 0.15;
+		velY += -0.005f;
+		posY += velY;
+		if (posY < 0.0f) {
+	posY -= 0.1f;
+	velY *= 0;
+	if (velY < 0.01f) {
+		velY = 0.0f;
+		posY = 0;
+	}
+		}
+	}
 		} else {
-			//pause
-			SDL_PauseAudio(1);
+	//pause
+	SDL_PauseAudio(1);
 		}
 
 	}
@@ -528,7 +681,7 @@ void key(unsigned char key, int x, int y) {
 		sprintf(text, " ");
 		break;
 	case 27:
-		exit(0);				// exit
+		exit(0);		// exit
 	}
 	glutPostRedisplay();
 }
@@ -544,11 +697,13 @@ void special(int key, int x, int y) {
 	}
 	//  Flecha arriba: Saltar
 	else if (key == GLUT_KEY_UP) {
+		abajo=false;
 		posY = 0.8;
 	}
 	//  Flecha abajo: Saltar
 	else if (key == GLUT_KEY_DOWN) {
 		Y = -0.5;
+		abajo=true;
 	}
 
 }
@@ -608,7 +763,7 @@ int main(int argc, char **argv) {
 
 	//SDL_PauseAudio(0);
 	while (audio_len > 0) {
-		SDL_Delay(0);			// espera un segundo para la pausa
+		SDL_Delay(0);	// espera un segundo para la pausa
 	}
 	SDL_CloseAudio();
 	SDL_FreeWAV(wav_buffer);
