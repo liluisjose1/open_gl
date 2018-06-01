@@ -1,0 +1,3 @@
+/home/luis/dino_game_optimizado/build/CMakeFiles/rebuild_cache.dir
+/home/luis/dino_game_optimizado/build/CMakeFiles/edit_cache.dir
+/home/luis/dino_game_optimizado/build/CMakeFiles/dino_game.dir
