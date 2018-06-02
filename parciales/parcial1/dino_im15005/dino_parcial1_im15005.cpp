@@ -35,28 +35,7 @@ GLfloat X = 0.0f;
 GLfloat Y = 0.1f;
 GLfloat Z = 0.0f;
 GLfloat scale = 0.1f;
-GLuint texture[0];
 void escena(){
-		            //texturas
-                texture[0] = SOIL_load_OGL_texture // cargamos la imagen
-                     (
-                "img/dino.jpg",
-                SOIL_LOAD_AUTO,
-                SOIL_CREATE_NEW_ID,
-                SOIL_FLAG_MIPMAPS | SOIL_FLAG_INVERT_Y | SOIL_FLAG_NTSC_SAFE_RGB | SOIL_FLAG_COMPRESS_TO_DXT
-                     );
-	    glEnable(GL_TEXTURE_2D);
-		glBindTexture(GL_TEXTURE_2D, texture[0]);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-	  glBegin(GL_QUADS);
-	  glColor3f(1.0,1.0,1.0);
-		glTexCoord2f(0.0f,   1.0f);     glVertex2f(-10, 10);
-		glTexCoord2f(1.0f,   1.0f);     glVertex2f(10, 10);
-		glTexCoord2f(1.0f,   0.0f);     glVertex2f(10, -10);
-		glTexCoord2f(0.0f,   0.0f);     glVertex2f(-10, -10);
-      glEnd();
-			
 		//suelo
 		glBegin(GL_QUADS);
 			glColor3f(0,0,0);
@@ -104,55 +83,41 @@ void dino_movimiento(){
     
 
       glBegin(GL_QUADS);
+			//OJO
+			glColor3f(1,1,1);
+			glVertex2f(0.8,0.0);
+			glVertex2f(1.0,0.0);
+			glVertex2f(1.0,-0.2);
+			glVertex2f(0.8,-0.2);
+			
 			//CABEZA
 			glColor3f(0,0,0);
-			glVertex2f(0.5,-1.5);
-			glVertex2f(0.5,1.6);
-			glVertex2f(-0.2,1.6);
-			glVertex2f(-0.2,-1.5);
-			//TRONCO
-			glVertex2f(0.7,0);
-			glVertex2f(0.7,-1);
-			glVertex2f(0,-1);
-			glVertex2f(0,0);
+			glVertex2f(0.0,-0.2);
+			glVertex2f(0.4,-0.2);
+			glVertex2f(0.4,-1.2);
+			glVertex2f(0.0,-1.2);
 			
-			//OJO
-			 glColor3f(1,1,1);
+			glVertex2f(0.4,0.2);
+			glVertex2f(0.8,0.2);
+			glVertex2f(0.8,-1.4);
+			glVertex2f(0.4,-1.4);
+
+			glVertex2f(0.8,0.2);
+			glVertex2f(2.0,0.2);
+			glVertex2f(2.0,-0.9);
+			glVertex2f(0.8,-0.9);
 			
-			glVertex2f(0.7,1.2);
-			glVertex2f(0.7,1.4);
-			glVertex2f(0.2,1.4);
-			glVertex2f(0.2,1.2);
+			glVertex2f(0.6,0.2);
+			glVertex2f(1.8,0.2);
+			glVertex2f(1.8,0.4);
+			glVertex2f(0.6,0.4);
 			
-			 glColor3f(0,0,0);
-			//MANITO
-			glVertex2f(0.7,-0.2);
-			glVertex2f(0.7,-0.4);
-			glVertex2f(0.9,-0.4);
-			glVertex2f(0.9,-0.2);
-			
-			glVertex2f(0.9,-0.2);
-			glVertex2f(1.1,-0.2);
-			glVertex2f(1.1,-0.6);
-			glVertex2f(0.9,-0.6);
-			
-			//BOCA
-			glVertex2f(0,0);
-			glVertex2f(1.5,0);
-			glVertex2f(1.5 ,0.3);
-			glVertex2f(0,0.3);
-			
-			glVertex2f(2,0.5);
-			glVertex2f(2,1.6);
-			glVertex2f(0,1.6);
-			glVertex2f(0,0.5);
-			
-			glVertex2f(1.8,1.6);
-			glVertex2f(1.8,1.8);
-			glVertex2f(0.0,1.8);
-			glVertex2f(0.0,1.6);
-			
+			glVertex2f(0.8,-1.1);
+			glVertex2f(1.5,-1.1);
+			glVertex2f(1.5,-1.4);
+			glVertex2f(0.8,-1.4);
 			//ESPALDA
+			glColor3f(0,0,0);
 			glVertex2f(0.0,0.0);
 			glVertex2f(0.0,-1.8);
 			glVertex2f(-0.4,-1.8);
@@ -167,6 +132,7 @@ void dino_movimiento(){
 			glVertex2f(-0.7,-1.8);
 			glVertex2f(-1.1,-1.8);
 			glVertex2f(-1.1,-0.5);
+				
 			
 			//PATAS
 			
@@ -219,7 +185,7 @@ void dino_movimiento(){
 void display()
 {
     //  Borrar pantalla y Z-buffer
-    //glClearColor(1.0,1.0,1.0,1.0);
+    glClearColor(1.0,1.0,1.0,1.0);
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 	 
 	 //funciones

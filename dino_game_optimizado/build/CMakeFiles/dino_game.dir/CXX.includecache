@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/dino_game_optimizado/dino_optimizado.cpp
+math.h
+-
+GL/gl.h
+-
+GL/glut.h
+-
+SOIL/SOIL.h
+-
+iostream
+-
+stdio.h
+-
+SDL2/SDL.h
+-
+
