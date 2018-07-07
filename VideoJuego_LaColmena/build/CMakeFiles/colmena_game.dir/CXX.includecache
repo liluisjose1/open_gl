@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/Descargas/VideoJuego_LaColmena/main.cpp
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+SOIL/SOIL.h
+-
+SDL2/SDL.h
+-
+GLUT/glut.h
+-
+GL/glut.h
+-
+sources/funciones.h
+/home/luis/Descargas/VideoJuego_LaColmena/sources/funciones.h
+
+/home/luis/Descargas/VideoJuego_LaColmena/sources/funciones.h
+

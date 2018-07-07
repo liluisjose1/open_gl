@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/futbol.dir/main.cpp.o  -o futbol  -L/usr/lib/SOIL -rdynamic -lGLU -lGL -lglut -lXmu -lXi -lSOIL -Wl,-rpath,/usr/lib/SOIL 

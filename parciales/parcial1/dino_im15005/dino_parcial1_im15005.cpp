@@ -71,10 +71,8 @@ void escena(){
 }
 void dino_movimiento(){
 		
+	glPushMatrix();
 
-    // Resetear transformaciones
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
     // Rotar en el Eje Y
     glRotatef( rotate_y, 0.0, 1.0, 0.0 );
     glTranslatef(X, Y, Z); 	// Transladar en los 3 Ejes
@@ -178,7 +176,6 @@ void dino_movimiento(){
 	  glEnd();
 	  
 	  glPopMatrix();
-	  glPushMatrix();
 	      
     
 	}
@@ -187,11 +184,13 @@ void display()
     //  Borrar pantalla y Z-buffer
     glClearColor(1.0,1.0,1.0,1.0);
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
-	 
+	     // Resetear transformaciones
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
 	 //funciones
 	 
 	  dino_movimiento();
-	  escena();
+	  //escena();
 	  glFlush();
 	  glutSwapBuffers();
 

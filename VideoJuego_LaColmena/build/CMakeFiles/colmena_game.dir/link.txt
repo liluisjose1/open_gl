@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/colmena_game.dir/main.cpp.o  -o colmena_game  -L/usr/lib/SOIL  -L/usr/lib/SDL2 /usr/lib/x86_64-linux-gnu/libGLU.so /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libglut.so /usr/lib/x86_64-linux-gnu/libXmu.so /usr/lib/x86_64-linux-gnu/libXi.so -lSOIL -lSDL2 -Wl,-rpath,/usr/lib/SOIL:/usr/lib/SDL2 

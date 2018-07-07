@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luis/open_gl/parciales/parcial3_im15005_gm15002/main.cpp
+GL/gl.h
+-
+GL/glu.h
+-
+GL/glut.h
+-
+SOIL/SOIL.h
+-
+stdlib.h
+-
+stdio.h
+-
+GL/freeglut.h
+-
+

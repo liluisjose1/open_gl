@@ -1,0 +1,3 @@
+/home/luis/Descargas/VideoJuego_LaColmena/build/CMakeFiles/edit_cache.dir
+/home/luis/Descargas/VideoJuego_LaColmena/build/CMakeFiles/rebuild_cache.dir
+/home/luis/Descargas/VideoJuego_LaColmena/build/CMakeFiles/colmena_game.dir
