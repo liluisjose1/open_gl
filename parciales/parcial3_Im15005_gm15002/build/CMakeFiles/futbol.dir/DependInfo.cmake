@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/luis/open_gl/parciales/parcial3_im15005_gm15002/main.cpp" "/home/luis/open_gl/parciales/parcial3_im15005_gm15002/build/CMakeFiles/futbol.dir/main.cpp.o"
+  "/home/luis/parcial3_Im15005_gm15002/main.cpp" "/home/luis/parcial3_Im15005_gm15002/build/CMakeFiles/futbol.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

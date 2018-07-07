@@ -1,3 +1,0 @@
-/home/luis/open_gl/parciales/parcial3_im15005_gm15002/build/CMakeFiles/edit_cache.dir
-/home/luis/open_gl/parciales/parcial3_im15005_gm15002/build/CMakeFiles/rebuild_cache.dir
-/home/luis/open_gl/parciales/parcial3_im15005_gm15002/build/CMakeFiles/futbol.dir

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/luis/open_gl/parciales/parcial3_im15005_gm15002/main.cpp
+/home/luis/parcial3_Im15005_gm15002/main.cpp
 GL/gl.h
 -
 GL/glu.h
